@@ -17,4 +17,8 @@
     <Copyright>Grzegorz Gałęzowski 2020</Copyright>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Glob" Version="1.1.6" />
+  </ItemGroup>
+
 </Project>
