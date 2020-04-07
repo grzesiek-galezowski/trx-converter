@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>convert-trx</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Grzegorz Gałęzowski</Authors>
+    <Company />
+    <Product>TddXt.TrxConverter</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageId>TddXt.TrxConverter</PackageId>
+    <AssemblyName>TddXt.TrxConverter</AssemblyName>
+    <RootNamespace>TddXt.TrxConverter</RootNamespace>
+    <Copyright>Grzegorz Gałęzowski 2020</Copyright>
+  </PropertyGroup>
+
+</Project>
