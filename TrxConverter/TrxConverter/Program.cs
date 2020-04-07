@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using GlobExpressions;
 
 namespace TddXt.TrxConverter
 {
@@ -8,37 +7,48 @@ namespace TddXt.TrxConverter
     {
         static void Main(string[] args)
         {
-            foreach (var trxPath in Glob.Files(args[0], args[1]))
+            Console.WriteLine($"Checking for {args[1]} in {args[0]}");
+            foreach (var trxPath in Directory.EnumerateFiles(args[0], args[1], SearchOption.AllDirectories))
             {
-                PrintTrx(Path.Combine(args[0], trxPath));
+                PrintTrx(Path.Combine(args[0], trxPath), new TextConsoleOutput());
+                PrintTrx(Path.Combine(args[0], trxPath), new HtmlFileTestOutput(FileNameFrom(trxPath)));
             }
         }
 
-        private static void PrintTrx(string path)
+        private static string FileNameFrom(string trxPath)
+        {
+            return Path.ChangeExtension(trxPath, "html");
+        }
+
+        private static void PrintTrx(string path, IOutput textOutput)
         {
             var text = File.ReadAllText(path);
             var testRun = text.ParseXml<TestRun>();
 
+            textOutput.BeginDocument();
+
             foreach (var result in testRun.Results)
             {
-                Console.WriteLine("=============");
-                Console.WriteLine(result.outcome + ": " + result.testName);
-                Console.WriteLine("=============");
+                textOutput.BeginTest(result.outcome, result.testName);
 
                 if (result.Output != null)
                 {
                     if (result.Output.StdOut != null)
                     {
-                        Console.WriteLine(result.Output.StdOut);
+                        textOutput.PrintStdOut(result.Output.StdOut);
                     }
 
                     if (result.Output.ErrorInfo != null)
                     {
-                        Console.WriteLine(result.Output.ErrorInfo.Message);
-                        Console.WriteLine(result.Output.ErrorInfo.StackTrace);
+                        textOutput.PrintErrorMessage(result.Output.ErrorInfo.Message);
+                        textOutput.PrintStackTrace(result.Output.ErrorInfo.StackTrace);
                     }
                 }
+
+                textOutput.EndTest();
             }
+            
+            textOutput.EndDocument();
         }
     }
 }
