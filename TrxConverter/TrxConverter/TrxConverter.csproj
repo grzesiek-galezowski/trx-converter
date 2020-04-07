@@ -10,15 +10,24 @@
     <Authors>Grzegorz Gałęzowski</Authors>
     <Company />
     <Product>TddXt.TrxConverter</Product>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <PackageId>TddXt.TrxConverter</PackageId>
     <AssemblyName>TddXt.TrxConverter</AssemblyName>
     <RootNamespace>TddXt.TrxConverter</RootNamespace>
     <Copyright>Grzegorz Gałęzowski 2020</Copyright>
+    <Version>1.1.0</Version>
+    <PackageLicenseFile>README.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Glob" Version="1.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
