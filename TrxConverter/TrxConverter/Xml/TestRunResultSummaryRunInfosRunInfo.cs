@@ -1,73 +1,72 @@
-﻿namespace TddXt.TrxConverter
+﻿namespace TddXt.TrxConverter.Xml
 {
   /// <remarks/>
   [System.SerializableAttribute()]
   [System.ComponentModel.DesignerCategoryAttribute("code")]
   [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
-  public partial class TestRunTimes
+  public partial class TestRunResultSummaryRunInfosRunInfo
   {
 
-    private System.DateTime creationField;
+    private string textField;
 
-    private System.DateTime queuingField;
+    private string computerNameField;
 
-    private System.DateTime startField;
+    private string outcomeField;
 
-    private System.DateTime finishField;
+    private System.DateTime timestampField;
 
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public System.DateTime creation
+    public string Text
     {
       get
       {
-        return this.creationField;
+        return this.textField;
       }
       set
       {
-        this.creationField = value;
+        this.textField = value;
       }
     }
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public System.DateTime queuing
+    public string computerName
     {
       get
       {
-        return this.queuingField;
+        return this.computerNameField;
       }
       set
       {
-        this.queuingField = value;
+        this.computerNameField = value;
       }
     }
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public System.DateTime start
+    public string outcome
     {
       get
       {
-        return this.startField;
+        return this.outcomeField;
       }
       set
       {
-        this.startField = value;
+        this.outcomeField = value;
       }
     }
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public System.DateTime finish
+    public System.DateTime timestamp
     {
       get
       {
-        return this.finishField;
+        return this.timestampField;
       }
       set
       {
-        this.finishField = value;
+        this.timestampField = value;
       }
     }
   }

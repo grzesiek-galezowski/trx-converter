@@ -15,8 +15,9 @@
     <AssemblyName>TddXt.TrxConverter</AssemblyName>
     <RootNamespace>TddXt.TrxConverter</RootNamespace>
     <Copyright>Grzegorz Gałęzowski 2020</Copyright>
-    <Version>1.4.0</Version>
+    <Version>1.5.0</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +25,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
   </ItemGroup>
 
 </Project>

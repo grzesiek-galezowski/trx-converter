@@ -1,6 +1,6 @@
 using System;
 
-namespace TddXt.TrxConverter
+namespace TddXt.TrxConverter.TextOutput
 {
     public class TextConsoleOutput : IOutput
     {

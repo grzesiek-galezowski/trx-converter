@@ -1,25 +1,24 @@
-﻿namespace TddXt.TrxConverter
+﻿namespace TddXt.TrxConverter.Xml
 {
   /// <remarks/>
   [System.SerializableAttribute()]
   [System.ComponentModel.DesignerCategoryAttribute("code")]
   [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
-  public partial class TestRunTestSettingsDeployment
+  public partial class TestRunResultSummaryRunInfos
   {
 
-    private string runDeploymentRootField;
+    private TestRunResultSummaryRunInfosRunInfo runInfoField;
 
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public string runDeploymentRoot
+    public TestRunResultSummaryRunInfosRunInfo RunInfo
     {
       get
       {
-        return this.runDeploymentRootField;
+        return this.runInfoField;
       }
       set
       {
-        this.runDeploymentRootField = value;
+        this.runInfoField = value;
       }
     }
   }

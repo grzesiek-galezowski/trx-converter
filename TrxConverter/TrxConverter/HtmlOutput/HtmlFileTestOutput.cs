@@ -2,7 +2,7 @@ using System.IO;
 using System.Text;
 using System.Web;
 
-namespace TddXt.TrxConverter
+namespace TddXt.TrxConverter.HtmlOutput
 {
     public class HtmlFileTestOutput : IOutput
     {

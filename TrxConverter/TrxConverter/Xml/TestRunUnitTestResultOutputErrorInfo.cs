@@ -1,39 +1,39 @@
-﻿namespace TddXt.TrxConverter
+﻿namespace TddXt.TrxConverter.Xml
 {
   /// <remarks/>
   [System.SerializableAttribute()]
   [System.ComponentModel.DesignerCategoryAttribute("code")]
   [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
-  public partial class TestRunUnitTestResultOutput
+  public partial class TestRunUnitTestResultOutputErrorInfo
   {
 
-    private string stdOutField;
+    private string messageField;
 
-    private TestRunUnitTestResultOutputErrorInfo errorInfoField;
+    private string stackTraceField;
 
     /// <remarks/>
-    public string StdOut
+    public string Message
     {
       get
       {
-        return this.stdOutField;
+        return this.messageField;
       }
       set
       {
-        this.stdOutField = value;
+        this.messageField = value;
       }
     }
 
     /// <remarks/>
-    public TestRunUnitTestResultOutputErrorInfo ErrorInfo
+    public string StackTrace
     {
       get
       {
-        return this.errorInfoField;
+        return this.stackTraceField;
       }
       set
       {
-        this.errorInfoField = value;
+        this.stackTraceField = value;
       }
     }
   }

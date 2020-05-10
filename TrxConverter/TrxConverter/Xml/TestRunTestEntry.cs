@@ -1,56 +1,57 @@
-﻿namespace TddXt.TrxConverter
+﻿namespace TddXt.TrxConverter.Xml
 {
   /// <remarks/>
   [System.SerializableAttribute()]
   [System.ComponentModel.DesignerCategoryAttribute("code")]
   [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
-  public partial class TestRunTestSettings
+  public partial class TestRunTestEntry
   {
 
-    private TestRunTestSettingsDeployment deploymentField;
+    private string testIdField;
 
-    private string nameField;
+    private string executionIdField;
 
-    private string idField;
+    private string testListIdField;
 
     /// <remarks/>
-    public TestRunTestSettingsDeployment Deployment
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string testId
     {
       get
       {
-        return this.deploymentField;
+        return this.testIdField;
       }
       set
       {
-        this.deploymentField = value;
+        this.testIdField = value;
       }
     }
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public string name
+    public string executionId
     {
       get
       {
-        return this.nameField;
+        return this.executionIdField;
       }
       set
       {
-        this.nameField = value;
+        this.executionIdField = value;
       }
     }
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public string id
+    public string testListId
     {
       get
       {
-        return this.idField;
+        return this.testListIdField;
       }
       set
       {
-        this.idField = value;
+        this.testListIdField = value;
       }
     }
   }
