@@ -15,7 +15,7 @@
     <AssemblyName>TddXt.TrxConverter</AssemblyName>
     <RootNamespace>TddXt.TrxConverter</RootNamespace>
     <Copyright>Grzegorz Gałęzowski 2020</Copyright>
-    <Version>1.5.0</Version>
+    <Version>1.5.1</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Nullable>enable</Nullable>
   </PropertyGroup>
