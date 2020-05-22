@@ -32,9 +32,11 @@ namespace TddXt.TrxConverter.TextOutput
             
         }
 
-        public void BeginDocument()
+        public void BeginDocument(string path)
         {
-
+            Console.WriteLine();
+            Console.WriteLine("File: " + path);
+            Console.WriteLine();
         }
 
         public void EndDocument()

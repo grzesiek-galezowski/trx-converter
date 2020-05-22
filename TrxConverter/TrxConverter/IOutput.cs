@@ -9,7 +9,7 @@ namespace TddXt.TrxConverter
         void PrintStdOut(string stdOut);
         void BeginTest(string testOutcome, string testName);
         void EndTest();
-        void BeginDocument();
+        void BeginDocument(string path);
         void EndDocument();
     }
 }

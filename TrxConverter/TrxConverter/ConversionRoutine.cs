@@ -10,7 +10,7 @@ namespace TddXt.TrxConverter
       var text = File.ReadAllText(path);
       var testRun = text.ParseXml<TestRun>();
 
-      textOutput.BeginDocument();
+      textOutput.BeginDocument(path);
 
       foreach (var result in testRun.Results)
       {

@@ -60,7 +60,7 @@ namespace TddXt.TrxConverter.HtmlOutput
             _content.Append("</details>");
         }
 
-        public void BeginDocument()
+        public void BeginDocument(string path)
         {
             _content.Append("<html style=\"font-family: Arial, Helvetica, sans-serif\">");
         }
