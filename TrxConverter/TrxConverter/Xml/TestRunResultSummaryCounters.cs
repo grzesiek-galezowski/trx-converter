@@ -7,41 +7,41 @@
   public partial class TestRunResultSummaryCounters
   {
 
-    private byte totalField;
+    private uint totalField;
 
-    private byte executedField;
+    private uint executedField;
 
-    private byte passedField;
+    private uint passedField;
 
-    private byte failedField;
+    private uint failedField;
 
-    private byte errorField;
+    private uint errorField;
 
-    private byte timeoutField;
+    private uint timeoutField;
 
-    private byte abortedField;
+    private uint abortedField;
 
-    private byte inconclusiveField;
+    private uint inconclusiveField;
 
-    private byte passedButRunAbortedField;
+    private uint passedButRunAbortedField;
 
-    private byte notRunnableField;
+    private uint notRunnableField;
 
-    private byte notExecutedField;
+    private uint notExecutedField;
 
-    private byte disconnectedField;
+    private uint disconnectedField;
 
-    private byte warningField;
+    private uint warningField;
 
-    private byte completedField;
+    private uint completedField;
 
-    private byte inProgressField;
+    private uint inProgressField;
 
-    private byte pendingField;
+    private uint pendingField;
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte total
+    public uint total
     {
       get
       {
@@ -55,7 +55,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte executed
+    public uint executed
     {
       get
       {
@@ -69,7 +69,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte passed
+    public uint passed
     {
       get
       {
@@ -83,7 +83,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte failed
+    public uint failed
     {
       get
       {
@@ -97,7 +97,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte error
+    public uint error
     {
       get
       {
@@ -111,7 +111,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte timeout
+    public uint timeout
     {
       get
       {
@@ -125,7 +125,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte aborted
+    public uint aborted
     {
       get
       {
@@ -139,7 +139,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte inconclusive
+    public uint inconclusive
     {
       get
       {
@@ -153,7 +153,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte passedButRunAborted
+    public uint passedButRunAborted
     {
       get
       {
@@ -167,7 +167,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte notRunnable
+    public uint notRunnable
     {
       get
       {
@@ -181,7 +181,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte notExecuted
+    public uint notExecuted
     {
       get
       {
@@ -195,7 +195,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte disconnected
+    public uint disconnected
     {
       get
       {
@@ -209,7 +209,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte warning
+    public uint warning
     {
       get
       {
@@ -223,7 +223,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte completed
+    public uint completed
     {
       get
       {
@@ -237,7 +237,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte inProgress
+    public uint inProgress
     {
       get
       {
@@ -251,7 +251,7 @@
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public byte pending
+    public uint pending
     {
       get
       {
