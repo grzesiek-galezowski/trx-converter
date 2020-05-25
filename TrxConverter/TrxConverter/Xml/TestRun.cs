@@ -1,10 +1,10 @@
 ﻿namespace TddXt.TrxConverter.Xml
 {
   /// <remarks/>
-  [System.SerializableAttribute()]
-  [System.ComponentModel.DesignerCategoryAttribute("code")]
-  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
-  [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010", IsNullable = false)]
+  [System.Serializable()]
+  [System.ComponentModel.DesignerCategory("code")]
+  [System.Xml.Serialization.XmlType(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
+  [System.Xml.Serialization.XmlRoot(Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010", IsNullable = false)]
   public partial class TestRun
   {
 

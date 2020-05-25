@@ -5,12 +5,12 @@ namespace TddXt.TrxConverter
 {
   static internal class ConversionRoutine
   {
-    public static void Execute(string path, IOutput textOutput)
+    public static void Execute(Options options, string trxRelativePath, IOutput textOutput)
     {
-      var text = File.ReadAllText(path);
+      var text = File.ReadAllText(Path.Combine(options.WorkingDirectory, trxRelativePath));
       var testRun = text.ParseXml<TestRun>();
 
-      textOutput.BeginDocument(path);
+      textOutput.BeginDocument(trxRelativePath);
 
       foreach (var result in testRun.Results)
       {

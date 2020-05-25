@@ -6,12 +6,12 @@ namespace TddXt.TrxConverter.HtmlOutput
 {
     public class HtmlFileTestOutput : IOutput
     {
-        private readonly string _filePath;
+        private readonly string _destinationFileRelativePath;
         private readonly StringBuilder _content;
 
-        public HtmlFileTestOutput(string filePath)
+        public HtmlFileTestOutput(string destinationFileRelativePath)
         {
-            this._filePath = filePath;
+            _destinationFileRelativePath = destinationFileRelativePath;
             _content = new StringBuilder();
         }
 
@@ -68,7 +68,9 @@ namespace TddXt.TrxConverter.HtmlOutput
         public void EndDocument()
         {
             _content.Append("</html>");
-            File.WriteAllText(_filePath, _content.ToString(), Encoding.UTF8);
+
+            Directory.CreateDirectory(Path.GetDirectoryName(_destinationFileRelativePath));
+            File.WriteAllText(_destinationFileRelativePath, _content.ToString(), Encoding.UTF8);
         }
     }
 }
