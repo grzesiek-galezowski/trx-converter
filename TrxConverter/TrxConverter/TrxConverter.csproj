@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>net5.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>convert-trx</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
@@ -14,8 +14,8 @@
     <PackageId>TddXt.TrxConverter</PackageId>
     <AssemblyName>TddXt.TrxConverter</AssemblyName>
     <RootNamespace>TddXt.TrxConverter</RootNamespace>
-    <Copyright>Grzegorz Gałęzowski 2020</Copyright>
-    <Version>1.6.0</Version>
+    <Copyright>Grzegorz Gałęzowski 2021</Copyright>
+    <Version>1.7.0</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Nullable>enable</Nullable>
   </PropertyGroup>
