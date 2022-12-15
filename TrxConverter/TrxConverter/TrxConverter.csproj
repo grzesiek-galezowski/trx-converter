@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>convert-trx</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
@@ -15,7 +15,7 @@
     <AssemblyName>TddXt.TrxConverter</AssemblyName>
     <RootNamespace>TddXt.TrxConverter</RootNamespace>
     <Copyright>Grzegorz Gałęzowski 2021</Copyright>
-    <Version>1.7.0</Version>
+    <Version>1.8.0</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Nullable>enable</Nullable>
   </PropertyGroup>
